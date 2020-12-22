@@ -29,3 +29,8 @@ function kidsWithCandies(candies, extraCandies){
 
   return candies;
 }
+
+/*
+  Really the trick to this one is finding the max of the array in a single line
+  so you're code looks all pretty
+*/
