@@ -1,10 +1,11 @@
 /*
-Given an array `nums`. We define a running sum of an array as
-`runningSum[i] = sum(nums[0]…nums[i])`.
+  Given an array `nums`. We define a running sum of an array as
+  `runningSum[i] = sum(nums[0]…nums[i])`.
 
-Return the running sum of `nums`.
+  Return the running sum of `nums`.
 */
 
+// For loop iteration. Much easier to read to my eye
 var runningSum = function(nums) {
   // Don't forget your micro optimizations
   let length = nums.length;
@@ -19,3 +20,8 @@ var runningSum = function(nums) {
 
     return nums;
 };
+
+/*
+  There's no real trick to this one. It's just iteration through the
+  array and adding the previous value to the next value.
+*/
