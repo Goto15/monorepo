@@ -1,7 +1,7 @@
-Number.prototype.insideRange = function(min, max) {
-  return (min <= this && this <= max);
+Number.prototype.insideRange = function(x, y) {
+  return (Math.min(x, y) <= this && this <= Math.max(x, y));
 }
 
-Number.prototype.outsideRange = function(min, max) {
-  return !(min < this && this < max);
+Number.prototype.outsideRange = function(x, y) {
+  return !(Math.min(x, y) < this && this < Math.max(x, y));
 }
