@@ -1,3 +1,5 @@
+TODO: actually write a readme lol
+
 # JavaScript Snippets
 
 ## Kadane's Algorithm
@@ -5,6 +7,7 @@
 Kadane's algrithm is an algorithm to find the maximum subarray sum of an array.
 
 ## Radian and Degree Conversions
+
 While working on some tree drawing code I needed to be able to convert from radians to degrees and back. These are the results of that research/remembering basic geometry.
 
 ## Range Operator
