@@ -1,5 +1,3 @@
-TODO: actually write a readme lol
-
 # JavaScript Snippets
 
 ## Kadane's Algorithm
