@@ -1,7 +1,7 @@
 const blackAndWhite = {
   white: '#ffffff',
   black: '#000000'
-}
+};
 
 const mondrian = {
   blue: '#2034d6',
@@ -9,4 +9,8 @@ const mondrian = {
   yellow: '#fded01',
   white: '#ffffff',
   black: '#000000'
+};
+
+const trueBlue = {
+  trueBlue: '#0073cf'
 }

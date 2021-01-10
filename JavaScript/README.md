@@ -4,9 +4,9 @@
 
 Kadane's algrithm is an algorithm to find the maximum subarray sum of an array.
 
-## Radian and Degree Conversions
+## Random Trig Stuff
 
-While working on some tree drawing code I needed to be able to convert from radians to degrees and back. These are the results of that research/remembering basic geometry.
+I've been having to calculate a bunch of endpoints given some information and degrees so I just threw a few of these together in one place.
 
 ## Range Operator
 

@@ -11,5 +11,5 @@ function degreeToRadian(degree){
 }
 
 function radianToDegree(radian){
-  return radian * (180/Math.PI);
+  return radian * (180 / Math.PI);
 }
