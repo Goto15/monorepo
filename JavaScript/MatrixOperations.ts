@@ -1,7 +1,8 @@
 /*  https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Matrix_math_for_the_web */
 /*  This Point class is here for demonstration puposes, specifically of what the
-    following functions expect not what they require. Usually these will be translated to JavaScript and used on 2D points, but I've included the z point just for my
-    future sanity. */
+    following functions expect not what they require. Usually these will be translated to
+    JavaScript and used on 2D points, but I've included the z point just for my future
+    sanity. */
 class Point {
   x: number;
   y: number;

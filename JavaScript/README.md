@@ -4,6 +4,10 @@
 
 Kadane's algrithm is an algorithm to find the maximum subarray sum of an array.
 
+## Matrix Operations
+
+A selection of operations on arrays of points that represents a shape.
+
 ## Random Trig Stuff
 
 I've been having to calculate a bunch of endpoints given some information and degrees so I just threw a few of these together in one place.
