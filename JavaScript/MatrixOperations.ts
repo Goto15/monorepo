@@ -17,30 +17,42 @@ class Point {
 
 /*  Rotates a shape by x degrees */
 function rotate(pointArray: Array<Point>, degree: number){
-  let newPoints = pointArray.map(point => {
-                    point.x = point.x*Math.cos(degree) - point.y*Math.sin(degree);
-                    point.y = point.x*Math.sin(degree) + point.y*Math.cos(degree);
-                    /* There should be a z point rotation here, but I dunno math */
-                  });
+  let newPoints = Array(pointArray.length);
+
+  pointArray.forEach((point, index) => {
+    let x = point.x*Math.cos(degree) - point.y*Math.sin(degree);
+    let y = point.x*Math.sin(degree) + point.y*Math.cos(degree);
+    /* There should be a z point rotation here, but I dunno math */
+    newPoints[index] = [x, y];
+  });
+
   return newPoints;
 }
 
 /*  Moves a shape by the x, y, and z values provided in the Point object */
 function translate(pointArray: Array<Point>, translationPoint: Point){
-  let newPoints = pointArray.map(point => {
-                    point.x += translationPoint.x;
-                    point.y += translationPoint.y;
-                    point.z += translationPoint.z;
-                  });
+  let newPoints = Array(pointArray.length);
+
+  pointArray.forEach((point, index) => {
+    let x = point.x + translationPoint.x;
+    let y = point.y + translationPoint.y;
+    let z = point.z + translationPoint.z;
+    newPoints[index] = [x, y, z];
+  });
+
   return newPoints;
 }
 
 /* Multiples a shapes dimensions by the x, y, and z values provided in the Point */
 function transform(pointArray: Array<Point>, scalePoint: Point){
-  let newPoints = pointArray.map(point => {
-                    point.x *= scalePoint.x;
-                    point.y *= scalePoint.y;
-                    point.z *= scalePoint.z;
-                  });
+  let newPoints = Array(pointArray.length);
+
+  pointArray.forEach((point, index) => {
+    let x = point.x * scalePoint.x;
+    let y = point.y * scalePoint.y;
+    let z = point.z * scalePoint.z;
+    newPoints[index] = [x, y, z];
+  });
+
   return newPoints;
 }
