@@ -1,0 +1,52 @@
+{
+    /* ----- Ruby Language Settings ----- */
+    "ruby.useBundler": true, //run non-lint commands with bundle exec
+    "ruby.useLanguageServer": true, // use the internal language server (see below)
+    "ruby.intellisense": "rubyLocate", // allows for cmd+click to definition
+    "ruby.lint": {
+        "rubocop": {
+            "useBundler": true // enable rubocop via bundler
+        },
+        "reek": {
+            "useBundler": true // enable reek via bundler
+        }
+    },
+    "ruby.format": "rubocop", // use rubocop for formatting
+    /* ----- Editor Settings ----- */
+    "breadcrumbs.enabled": true,
+    "breadcrumbs.icons": true,
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingQuotes": "always",
+    "editor.codeActionsOnSave": {}, // here in case I need to get fancy on save like formatting etc.
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true, // nice
+    "editor.fontSize": 12.25,
+    "editor.fontWeight": "500",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.wordBasedSuggestions": false,
+    /* ----- Window Settings ----- */
+    "window.zoomLevel": 2,
+    "window.commandCenter": false,
+    /* ----- File Settings ----- */
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    /* ----- Workbench Settings ----- */
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.fontAliasing": "antialiased", // Default: none
+    "workbench.statusBar.visible": true, // that blue bar at the bottom of the window
+    "material-icon-theme.folders.color": "#a0a0a0", // Default: #90a4ae
+    /* ----- Extension Settings ----- */
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.hovers.enabled": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.minimap.enabled": false,
+    "search.useIgnoreFiles": false,
+    "editor.semanticTokenColorCustomizations": {
+    
+    },
+    /* ----- Terminal Settings ----- */
+    // TODO: set up fish as default terminal in VSC
+}
