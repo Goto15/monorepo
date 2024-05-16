@@ -1,0 +1,43 @@
+/*
+References:
+
+Textarea and Input: https: //adrianroselli.com/2019/09/under-engineered-text-boxen.html
+
+*/
+
+textarea,
+input:not([type="checkbox"]):not([type="file"]):not([type="image"]):not([type="radio"]):not([type="range"]) {
+    font: inherit;
+    letter-spacing: inherit;
+    word-spacing: inherit;
+    border: 0.1em solid;
+    padding: 0 0.2em;
+}
+
+textarea:focus,
+input:not([type="checkbox"]):not([type="file"]):not([type="image"]):not([type="radio"]):not([type="range"]):focus {
+    outline: 0.15em solid #00f;
+    box-shadow: 0 0 0.2em #00f;
+}
+
+textarea[required],
+input:not([type="checkbox"]):not([type="file"]):not([type="image"]):not([type="radio"]):not([type="range"])[required] {
+    border-left-width: 0.3em;
+}
+
+/* Dark mode */
+@media screen and (prefers-color-scheme: dark) {
+
+    textarea,
+    input:not([type="checkbox"]):not([type="file"]):not([type="image"]):not([type="radio"]):not([type="range"]) {
+        background-color: transparent;
+        color: inherit;
+        border-color: #ccc;
+    }
+
+    textarea:focus,
+    input:not([type="checkbox"]):not([type="file"]):not([type="image"]):not([type="radio"]):not([type="range"]):focus {
+        outline-color: #0ff;
+        box-shadow: 0 0 0.2em #0ff;
+    }
+}
