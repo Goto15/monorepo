@@ -11,6 +11,11 @@ const mondrian = {
   black: '#000000'
 };
 
+const navyWarning = {
+  background: '#2c3740',
+  hightlight: '#eaaf59'
+}
+
 const trueBlue = {
   trueBlue: '#0073cf'
 }
